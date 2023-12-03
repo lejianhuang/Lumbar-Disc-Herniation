@@ -22,7 +22,7 @@ This project is structured in two distinct stages. Initially, we employ the robu
 
 Derived from the _segmentation\_vertebra.py_ pipeline of a SegResNet-based model within MONAI Label [1], our Unet-based models (depicted in **Fig. 1** ) were adapted for training MRI images to accurately segment the spine structure. Given the necessity to address both herniated and healthy lumbar discs (LD) presented in both sagittal and transverse planes, we developed four distinct versions of our models.
 
-![](RackMultipart20231203-1-v1oxha_html_387c3037adb53b82.jpg)
+![Figure 1](images/Fig1.jpg)
 
 Figure 1. The structure of UNet
 
