@@ -24,7 +24,9 @@ Derived from the _segmentation\_vertebra.py_ pipeline of a SegResNet-based model
 
 ![Figure 1](images/Fig1.jpg)
 
+<center>
 Figure 1. The structure of UNet
+</center>
 
 **Data**
 
