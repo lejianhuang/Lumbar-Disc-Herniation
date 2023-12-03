@@ -24,15 +24,13 @@ Derived from the _segmentation\_vertebra.py_ pipeline of a SegResNet-based model
 
 ![Figure 1](images/Fig1.jpg)
 
-<p align="center">
 Figure 1. The structure of UNet
-</p>
 
 **Data**
 
 We recruited 146 patients experiencing chronic pain lasting a minimum of 12 weeks, all diagnosed with LDH through thorough examination of medical history, physical assessment, and independent confirmation via consistent MRI evaluation by two radiologists. Each subject underwent dual scans, both pre and post-surgery, conducted using a 3 Tesla GE-Discovery 750 scanner.
 
-**Scanner Specifications**
+***Scanner Specifications***
 ![Scanner](images/Scanner.jpg)
 **Preprocessing**
 
