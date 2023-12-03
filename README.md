@@ -24,32 +24,32 @@ Derived from the _segmentation\_vertebra.py_ pipeline of a SegResNet-based model
 
 ![Figure 1](images/Fig1.jpg)
 
-Figure 1. The structure of UNet
+##### Figure 1. The structure of UNet
 
 **Data**
 
 We recruited 146 patients experiencing chronic pain lasting a minimum of 12 weeks, all diagnosed with LDH through thorough examination of medical history, physical assessment, and independent confirmation via consistent MRI evaluation by two radiologists. Each subject underwent dual scans, both pre and post-surgery, conducted using a 3 Tesla GE-Discovery 750 scanner.
 
-***Scanner Specifications***
+##### **Scanner Specifications**
 ![Scanner](images/Scanner.jpg)
-**Preprocessing**
+##### **Preprocessing**
 
 1. Transformed image format from DICOM to NIFTI utilizing bash script.
 2. Classified 146 images into herniated or healthy groups in both sagittal and transverse planes, selecting 34 images randomly to form our primary dataset for training models.
 
 **Training Configurations**
 
-**Environments**
+##### **Environments**
 
 1. GPU: RTX 4090 24GB | RTX 3070 8GB
 2. OS: Windows 11
 3. Others: CUDA, Pytorch-GPU, Anaconda
 
-**Input**
+##### **Input**
 
 One channel - MRI image
 
-**Output**
+##### **Output**
 
 Sagittal Plane:
 
@@ -65,19 +65,19 @@ Transverse Plane:
 
 ![Figure 2](images/Fig2.jpg)
 
-Figure 2. The training process of a model
+##### Figure 2. The training process of a model
 
-**Stage 1: Data Conversion and Preparation**
+##### **Stage 1: Data Conversion and Preparation**
 
 The data format was converted from DICOM to NIfTI to ensure compatibility with the loading requirements of 3D-Slicer.
 
-**Stage 2: Annotation and Models Training**
+##### **Stage 2: Annotation and Models Training**
 
 1. Compiled the Unet-based pipeline and implemented the MONAI Label server to facilitate training the network.
 2. Conducted annotations through human labeling, adhering to the settings and labels outlined in the Unet-based pipeline. Furthermore, annotations were fine-tuned based on the specific LD plane input, whether sagittal or transverse.
 3. Configured the network training by setting parameters such as epoch and split-value, and proceeded with the training process
 
-**Stage 3: Model Development and Refinement**
+##### **Stage 3: Model Development and Refinement**
 
 After conducting automatic inference to obtain intervertebral disk, vertebrae, cerebrospinal fluid, and herniated area using the trained UNet network, the model underwent iterative refinement until reaching satisfactory accuracy. This process involved submitting refined annotations and/or expanding the training datasets to fine-tune the model.
 
@@ -85,27 +85,27 @@ After conducting automatic inference to obtain intervertebral disk, vertebrae, c
 
 We developed four distinct models corresponding to the herniated and healthy groups in both sagittal and transverse planes. This decision was informed by our observation that the accuracy achieved through individualized models for each scenario outperformed the accuracy obtained from a single model encompassing all four scenarios.
 
-**Sagittal plane**
+##### **Sagittal plane**
 
-**Fig. 3** illustrates the segmentation results achieved with an accuracy of 84%, based on the analysis of 34 subjects after 50 training epochs.
+##### **Fig. 3** illustrates the segmentation results achieved with an accuracy of 84%, based on the analysis of 34 subjects after 50 training epochs.
 
 ![Figure 3](images/Fig3.jpg)
 
-**Figure 3**
+##### **Figure 3**
 
-**Transverse plane**
+##### **Transverse plane**
 
 **Fig. 4** depict the segmentation and localization of intervertebral discs and cerebrospinal fluid in a healthy lumbar disc.
 
 ![Figure 4](images/Fig4.jpg)
 
-**Figure 4**
+##### **Figure 4**
 
 Likewise, as illustrated in **Fig. 5** , when applied to the transverse plane of a herniated lumbar disc, the model demonstrated its capability to accurately segment intervertebral discs, cerebrospinal fluid, and the herniated area.
 
 ![Figure 5](images/Fig5.jpg)
 
-**Figure 5**
+##### **Figure 5**
 
 In summary, through the customization and adjustment of parameters, coupled with the expertise of human labeling, our models have developed the capability to effectively and accurately perform auto-segmentation, specifically identifying herniated lumbar discs.
 
