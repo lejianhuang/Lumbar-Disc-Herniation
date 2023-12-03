@@ -31,7 +31,7 @@ Figure 1. The structure of UNet
 We recruited 146 patients experiencing chronic pain lasting a minimum of 12 weeks, all diagnosed with LDH through thorough examination of medical history, physical assessment, and independent confirmation via consistent MRI evaluation by two radiologists. Each subject underwent dual scans, both pre and post-surgery, conducted using a 3 Tesla GE-Discovery 750 scanner.
 
 **Scanner Specifications**
-
+![Scanner](images/Scanner.jpg)
 **Preprocessing**
 
 1. Transformed image format from DICOM to NIFTI utilizing bash script.
@@ -63,7 +63,7 @@ Transverse Plane:
 
 **Model Diagram**
 
-![](RackMultipart20231203-1-v1oxha_html_8640836b3331b267.jpg)
+![Figure 2](images/Fig2.jpg)
 
 Figure 2. The training process of a model
 
@@ -87,7 +87,9 @@ We developed four distinct models corresponding to the herniated and healthy gro
 
 **Sagittal plane**
 
-**Fig. 3** illustrates the segmentation results achieved with an accuracy of 84%, based on the analysis of 34 subjects after 50 training epochs. ![](RackMultipart20231203-1-v1oxha_html_18080f19b5d575c4.jpg)
+**Fig. 3** illustrates the segmentation results achieved with an accuracy of 84%, based on the analysis of 34 subjects after 50 training epochs.
+
+![Figure 3](images/Fig3.jpg)
 
 **Figure 3**
 
@@ -95,13 +97,13 @@ We developed four distinct models corresponding to the herniated and healthy gro
 
 **Fig. 4** depict the segmentation and localization of intervertebral discs and cerebrospinal fluid in a healthy lumbar disc.
 
-![](RackMultipart20231203-1-v1oxha_html_67385f1844519377.jpg)
+![Figure 4](images/Fig4.jpg)
 
 **Figure 4**
 
 Likewise, as illustrated in **Fig. 5** , when applied to the transverse plane of a herniated lumbar disc, the model demonstrated its capability to accurately segment intervertebral discs, cerebrospinal fluid, and the herniated area.
 
-![](RackMultipart20231203-1-v1oxha_html_ee220fa88a53abc0.jpg)
+![Figure 5](images/Fig5.jpg)
 
 **Figure 5**
 
