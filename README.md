@@ -1,4 +1,4 @@
-**Applying MONAI to Assist in the Diagnosis of Lumbar Disc Herniation**
+#**Applying MONAI to Assist in the Diagnosis of Lumbar Disc Herniation**
 
 **Key Investigators**
 
