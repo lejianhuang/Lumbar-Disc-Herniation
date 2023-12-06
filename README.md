@@ -100,6 +100,7 @@ We developed four distinct models corresponding to the herniated and healthy gro
 Likewise, as illustrated in **Fig. 5** , when applied to the transverse plane of a herniated lumbar disc, the model demonstrated its capability to accurately segment intervertebral discs, cerebrospinal fluid, and the herniated area.
 
 <div align=center>
+
 ![Figure 5](images/Fig5.jpg)
 </div>
 ##### <p align="center">Figure 5</p>
