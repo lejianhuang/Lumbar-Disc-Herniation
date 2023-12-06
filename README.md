@@ -99,8 +99,9 @@ We developed four distinct models corresponding to the herniated and healthy gro
 
 Likewise, as illustrated in **Fig. 5** , when applied to the transverse plane of a herniated lumbar disc, the model demonstrated its capability to accurately segment intervertebral discs, cerebrospinal fluid, and the herniated area.
 
+<div align=center>
 ![Figure 5](images/Fig5.jpg)
-
+</div>
 ##### <p align="center">Figure 5</p>
 
 In summary, through the customization and adjustment of parameters, coupled with the expertise of human labeling, our models have developed the capability to effectively and accurately perform auto-segmentation, specifically identifying herniated lumbar discs.
