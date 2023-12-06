@@ -23,8 +23,6 @@ This project is structured in two distinct stages. Initially, we employ the robu
 Derived from the _segmentation\_vertebra.py_ pipeline of a SegResNet-based model within MONAI Label [1], our Unet-based models (depicted in **Fig. 1** ) were adapted for training MRI images to accurately segment the spine structure. Given the necessity to address both herniated and healthy lumbar discs (LD) presented in both sagittal and transverse planes, we developed four distinct versions of our models.
 
 ![Figure 1](images/Fig1.jpg)
-
-
 ##### <p align="center">Figure 1. The structure of UNet</p>
 
 ## **Data**
@@ -65,8 +63,7 @@ Transverse Plane:
 ## **Model Diagram**
 
 ![Figure 2](images/Fig2.jpg)
-
-##### Figure 2. The training process of a model
+##### <p align="center">Figure 2. The training process of a model</p>
 
 ### **Stage 1: Data Conversion and Preparation**
 
@@ -91,22 +88,20 @@ We developed four distinct models corresponding to the herniated and healthy gro
 ##### **Fig. 3** illustrates the segmentation results achieved with an accuracy of 84%, based on the analysis of 34 subjects after 50 training epochs.
 
 ![Figure 3](images/Fig3.jpg)
-
-##### **Figure 3**
+##### <p align="center">Figure 3</p>
 
 ### **Transverse plane**
 
 **Fig. 4** depict the segmentation and localization of intervertebral discs and cerebrospinal fluid in a healthy lumbar disc.
 
 ![Figure 4](images/Fig4.jpg)
-
-##### **Figure 4**
+##### <p align="center">Figure 4</p>
 
 Likewise, as illustrated in **Fig. 5** , when applied to the transverse plane of a herniated lumbar disc, the model demonstrated its capability to accurately segment intervertebral discs, cerebrospinal fluid, and the herniated area.
 
 ![Figure 5](images/Fig5.jpg)
 
-##### **Figure 5**
+##### <p align="center">Figure 5</p>
 
 In summary, through the customization and adjustment of parameters, coupled with the expertise of human labeling, our models have developed the capability to effectively and accurately perform auto-segmentation, specifically identifying herniated lumbar discs.
 
